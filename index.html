@@ -1,0 +1,9 @@
+<h1> HELLO WORLD </h1>
+<main></main>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script>
+  $.get('data', function(response){
+    $('main').text(JSON.parse(
+      response).name);
+  });
+</script>
